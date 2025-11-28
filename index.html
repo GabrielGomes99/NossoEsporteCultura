@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEC - Nosso Esporte e Cultura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imagens/logoNec.png" alt="NEC - Nosso Esporte e Cultura" />
+            </div>
+            <div class="nav-buttons">
+                <a href="#inicio" class="btn btn-primary" onclick="showSection('inicio')">Início</a>
+                <a href="#transparencia" class="btn btn-secondary" onclick="showSection('transparencia')">Portal da Transparência</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div id="inicio">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>NEC – Nosso Esporte e Cultura</h1>
+                <p>Transformando vidas através do esporte</p>
+            </div>
+        </section>
+
+        <!-- História -->
+        <section id="historia">
+            <h2 class="section-title">Nossa História</h2>
+            <p class="section-subtitle">Uma trajetória de dedicação e transformação social</p>
+            
+            <div class="historia-content">
+                <div class="historia-text">
+                    <p>O <strong>NEC – Nosso Esporte e Cultura</strong> tem como missão retirar crianças e adolescentes das ruas de <strong>Ceilândia</strong>, oferecendo oportunidades de transformação por meio do esporte. Desde <strong>2016</strong>, promove valores como disciplina, respeito, pontualidade, cordialidade, urbanidade e cooperação, além de estimular o crescimento pessoal e profissional dos jovens atendidos.</p>
+                    
+                    <p>A instituição incentiva a continuidade dos treinamentos e a aplicação dos aprendizados no cotidiano, formando cidadãos mais conscientes. O esporte, em todas as modalidades e níveis, contribui para a evolução física, mental e espiritual dos atletas, impactando positivamente suas vidas.</p>
+                    
+                    <p>O NEC também trabalha conceitos históricos, sociais e econômicos, adequando-os ao contexto de cada jovem e à sua realidade, acompanhando que cada trajetória é única. Dessa forma, busca melhorar a qualidade de vida, ampliar perspectivas e oferecer novos caminhos para crianças e adolescentes.</p>
+                </div>
+                
+                <div class="historia-image"></div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">150</div>
+                    <div>Beneficiários Diretos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">450</div>
+                    <div>Beneficiários Indiretos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8</div>
+                    <div>Anos de História</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Missão, Visão e Valores -->
+        <section id="mvv">
+            <h2 class="section-title">Missão, Visão e Valores</h2>
+            <p class="section-subtitle">Os pilares que guiam nossa atuação</p>
+            
+            <div class="mvv-container">
+                <div class="mvv-card">
+                    <h3>Missão</h3>
+                    <p>Retirar crianças e adolescentes das ruas de Ceilândia, oferecendo oportunidades de transformação por meio do esporte. Promover valores como disciplina, respeito, pontualidade, cordialidade, urbanidade e cooperação, além de estimular o crescimento pessoal e profissional dos jovens atendidos, formando cidadãos mais conscientes e preparados para a vida.</p>
+                </div>
+                
+                <div class="mvv-card">
+                    <h3>Visão</h3>
+                    <p>Ser referência em desenvolvimento esportivo e social na região, reconhecido pela excelência na formação de atletas e cidadãos, inspirando outras iniciativas e expandindo nosso impacto para mais comunidades.</p>
+                </div>
+                
+                <div class="mvv-card">
+                    <h3>Valores</h3>
+                    <ul class="valores-list">
+                        <li>Disciplina</li>
+                        <li>Respeito</li>
+                        <li>Pontualidade</li>
+                        <li>Cordialidade</li>
+                        <li>Urbanidade</li>
+                        <li>Cooperação</li>
+                        <li>Crescimento pessoal e profissional</li>
+                        <li>Ética e transparência</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos">
+            <h2 class="section-title">Nossos Projetos</h2>
+            <p class="section-subtitle">Iniciativas que transformam vidas</p>
+            
+            <div class="projetos-grid">
+                <div class="projeto-card" onclick="openGallery('parcerias')" style="cursor: pointer;">
+                    <div class="projeto-image" style="background-image: url('imagens/bannerprincipal.jpeg')"></div>
+                    <div class="projeto-content">
+                        <h3>Parcerias e Ações Sociais</h3>
+                        <p>Desenvolvemos ações em parceria com empresas, escolas e outras organizações para ampliar nosso alcance. Campanhas de doação, eventos beneficentes e projetos especiais fazem parte da nossa atuação.</p>
+                        <p style="color: var(--azul-principal); font-weight: 600; margin-top: 1rem;">Clique para ver as fotos →</p>
+                    </div>
+                </div>
+
+                <div class="projeto-card" onclick="openGallery('instituto')" style="cursor: pointer;">
+                    <div class="projeto-image" style="background-image: url('imagens/imagem1.jpeg')"></div>
+                    <div class="projeto-content">
+                        <h3>Um pouco do Instituto NEC</h3>
+                        <p>Conheça mais sobre o NEC através das fotos de nossas atividades, eventos e momentos especiais que marcam nossa trajetória de transformação social através do esporte.</p>
+                        <p style="color: var(--azul-principal); font-weight: 600; margin-top: 1rem;">Clique para ver as fotos →</p>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-image" style="background-image: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?w=600')"></div>
+                    <div class="projeto-content">
+                        <h3>Escolinha de Esportes</h3>
+                        <p>Oferecemos treinamento gratuito em diversas modalidades esportivas para crianças e adolescentes de 6 a 17 anos. Futebol, vôlei, basquete, atletismo e muito mais, com professores qualificados e estrutura adequada.</p>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-image" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600')"></div>
+                    <div class="projeto-content">
+                        <h3>Apoio Escolar e Social</h3>
+                        <p>Além do esporte, oferecemos reforço escolar, orientação vocacional e acompanhamento psicossocial. Acreditamos na formação integral, preparando nossos jovens para todos os desafios da vida.</p>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-image" style="background-image: url('https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=600')"></div>
+                    <div class="projeto-content">
+                        <h3>Treinos Comunitários</h3>
+                        <p>Programas de atividade física para toda a comunidade, incluindo adultos e idosos. Promovemos saúde, bem-estar e integração social através de exercícios orientados e práticas esportivas.</p>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-image" style="background-image: url('https://images.unsplash.com/photo-1511886929837-354d827aae26?w=600')"></div>
+                    <div class="projeto-content">
+                        <h3>Eventos e Competições</h3>
+                        <p>Organizamos torneios, campeonatos e eventos esportivos que revelam talentos e fortalecem a autoestima dos participantes. Nossas equipes já conquistaram diversos títulos regionais e estaduais.</p>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-image" style="background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600')"></div>
+                    <div class="projeto-content">
+                        <h3>Formação de Atletas</h3>
+                        <p>Programa de alto rendimento para jovens talentos que sonham com a carreira esportiva. Oferecemos treinamento especializado, acompanhamento nutricional e preparação psicológica.</p>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600')"></div>
+                    <div class="projeto-content">
+                        <h3>R(e)volução Esportiva e Financeira pelo Conhecimento Digital</h3>
+                        <p>Projeto inovador que alia a disciplina do futebol à tecnologia, integrando educação esportiva e educação financeira. Mostra que podemos melhorar a vida de quem está à margem, somente com conhecimento e mudanças de hábitos, com saúde financeira e saúde do corpo.</p>
+                        <p><strong>Público-alvo:</strong> 150 beneficiários diretos e 450 indiretos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto Destaque -->
+            <div class="projeto-destaque">
+                <div class="projeto-destaque-container">
+                    <h2>Projeto em Destaque: R(e)volução Esportiva e Financeira pelo Conhecimento Digital</h2>
+                    
+                    <div class="projeto-destaque-grid">
+                        <div>
+                            <h3>Objetivo Geral</h3>
+                            <p>Aliar a disciplina do futebol à tecnologia, integrando o mesmo comportamento para a preparação para a vida e o cotidiano diário, partindo dos aprendizados esportivos e entrando na formação física e profissional, com ênfase na mudança de comportamento para lidar com o dinheiro e as finanças. O esporte e a tecnologia andarão de mãos dadas, educação esportiva e educação financeira, mostrando que podemos melhorar a vida de quem está à margem, somente com conhecimento e mudanças de hábitos, com saúde financeira e saúde do corpo.</p>
+                        </div>
+                        
+                        <div>
+                            <h3>Objetivos Específicos</h3>
+                            <p>Trazer aos atletas e suas famílias conhecimento financeiro, assim como o conhecimento da saúde para crescimento em suas vidas pessoais, entender que a saúde financeira é tão importante quanto a saúde do corpo, e que aprender a lidar com o dinheiro, beneficia diretamente a mente, o corpo e a vida como um todo. Mostrar que por meio dos cursos sairemos vitoriosos e bem informados.</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Justificativa</h3>
+                        <p>Demonstrar e esclarecer aos atletas e famílias que o conhecimento/cuidado financeiro é tão importante como o cuidado da saúde do corpo de um atleta e que só aprendendo conseguimos ter uma vida saudável financeiramente e corporalmente.</p>
+                    </div>
+
+                    <div class="projeto-destaque-grid">
+                        <div>
+                            <h3>Resultados Qualitativos</h3>
+                            <p>Mostrar que a educação financeira e o esporte aliado ao conhecimento em informática, são fontes de inclusão e mudança de vida para todas as pessoas. Mostrar para crianças e adolescentes como melhorar a qualidade de vida com o conhecimento financeiro e digital associado à disciplina esportiva.</p>
+                        </div>
+                        
+                        <div>
+                            <h3>Resultados Quantitativos</h3>
+                            <p>Atingir o maior número possível de pessoas por intermédio de cursos de educação financeira e organização digital aos que praticam esporte no NEC.</p>
+                        </div>
+                    </div>
+
+                    <div class="projeto-destaque-info">
+                        <h3>Público-Alvo</h3>
+                        <div class="projeto-destaque-info-grid">
+                            <div>
+                                <p><strong>Público atendido:</strong> Crianças, adolescentes e adultos</p>
+                                <p><strong>Qualitativo:</strong> Pessoas em situação de vulnerabilidade social</p>
+                            </div>
+                            <div>
+                                <p><strong>Beneficiários diretos:</strong> 150 pessoas</p>
+                                <p><strong>Beneficiários indiretos:</strong> 450 pessoas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Portal da Transparência -->
+    <div id="transparencia" class="hidden">
+        <section style="margin-top: 100px;">
+            <h2 class="section-title">Portal da Transparência</h2>
+            <p class="section-subtitle">Prestação de contas e informações institucionais</p>
+            
+            <div class="transparencia-content">
+                <div class="doc-categories">
+                    <div class="doc-category">
+                        <h3>📊 Prestação de Contas</h3>
+                        <ul class="doc-list">
+                            <li><a href="#">Relatório Financeiro 2024</a></li>
+                            <li><a href="#">Relatório Financeiro 2023</a></li>
+                            <li><a href="#">Demonstrativo de Receitas</a></li>
+                            <li><a href="#">Demonstrativo de Despesas</a></li>
+                            <li><a href="#">Balanço Patrimonial</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-category">
+                        <h3>📄 Documentos Institucionais</h3>
+                        <ul class="doc-list">
+                            <li><a href="#">Estatuto Social</a></li>
+                            <li><a href="#">Ata de Fundação</a></li>
+                            <li><a href="#">Registro no CNPJ</a></li>
+                            <li><a href="#">Certificado de Utilidade Pública</a></li>
+                            <li><a href="#">Regulamento Interno</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-category">
+                        <h3>📈 Relatórios de Atividades</h3>
+                        <ul class="doc-list">
+                            <li><a href="#">Relatório Anual 2024</a></li>
+                            <li><a href="#">Relatório Anual 2023</a></li>
+                            <li><a href="#">Relatório de Impacto Social</a></li>
+                            <li><a href="#">Estatísticas de Atendimento</a></li>
+                            <li><a href="#">Projetos Realizados</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-category">
+                        <h3>📢 Editais e Chamamentos</h3>
+                        <ul class="doc-list">
+                            <li><a href="#">Edital de Inscrições 2025</a></li>
+                            <li><a href="#">Processo Seletivo Voluntários</a></li>
+                            <li><a href="#">Chamamento para Parcerias</a></li>
+                            <li><a href="#">Edital de Patrocínio</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-category">
+                        <h3>🤝 Parceiros e Apoiadores</h3>
+                        <ul class="doc-list">
+                            <li><a href="#">Lista de Parceiros Oficiais</a></li>
+                            <li><a href="#">Empresas Apoiadoras</a></li>
+                            <li><a href="#">Convênios Ativos</a></li>
+                            <li><a href="#">Como Apoiar o NEC</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NEC – Nosso Esporte e Cultura</h3>
+                <p>Transformando vidas através do esporte<br>desde 2016.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>📧 marcin.nec07@gmail.com</p>
+                <p>📱 (61) 98182-6209</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Endereço</h3>
+                <p>Ceilândia - DF</p>
+                <p>Brasil</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <a href="#historia">Nossa História</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#transparencia" onclick="showSection('transparencia')">Transparência</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 NEC – Nosso Esporte e Cultura. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Galeria -->
+    <div id="gallery-modal" class="gallery-modal hidden">
+        <div class="gallery-modal-content">
+            <span class="gallery-close" onclick="closeGallery()">&times;</span>
+            <div class="gallery-header">
+                <h2 id="gallery-title">Galeria de Fotos</h2>
+            </div>
+            <div class="gallery-container" id="gallery-container">
+                <!-- Imagens serão inseridas aqui via JavaScript -->
+            </div>
+            <div class="gallery-nav">
+                <button class="gallery-btn-prev" onclick="changeImage(-1)">❮ Anterior</button>
+                <span class="gallery-counter"><span id="current-img">1</span> / <span id="total-imgs">12</span></span>
+                <button class="gallery-btn-next" onclick="changeImage(1)">Próxima ❯</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Fullscreen para imagem ampliada -->
+    <div id="fullscreen-modal" class="fullscreen-modal hidden">
+        <span class="fullscreen-close" onclick="closeFullscreen()">&times;</span>
+        <button class="fullscreen-prev" onclick="openImageFullscreen(currentImageIndex - 1 < 0 ? images.length - 1 : currentImageIndex - 1)">❮</button>
+        <img id="fullscreen-image" src="" alt="Imagem ampliada" class="fullscreen-image" />
+        <button class="fullscreen-next" onclick="openImageFullscreen(currentImageIndex + 1 >= images.length ? 0 : currentImageIndex + 1)">❯</button>
+        <div class="fullscreen-counter">
+            <span id="fullscreen-current">1</span> / <span id="fullscreen-total">12</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
